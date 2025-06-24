@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meniu Clătite</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #02340a;
+      color: #fff;
+      margin: 0;
+      padding: 40px 20px;
+      border: 5px solid white;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 40px;
+      color: #fff;
+    }
+
+    .clatita-list {
+      max-width: 1000px;
+      margin: 0 auto;
+      border: 3px solid gold;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .clatita-item {
+      padding: 15px 0;
+      border-bottom: 1px solid #555;
+    }
+
+    .clatita-item:last-child {
+      border-bottom: none;
+    }
+
+    .clatita-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .clatita-header h2 {
+      font-size: 1.2em;
+      color: #fff;
+      margin: 0;
+      flex: 1;
+      padding-right: 10px;
+      word-break: break-word;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #fff;
+      white-space: nowrap;
+    }
+
+    .ingredient {
+      color: #ccc;
+      font-size: 1em;
+      margin: 5px 0;
+    }
+
+    .faina {
+      color: red;
+      font-weight: bold;
+    }
+
+    .lactate {
+      color: orange;
+      font-weight: bold;
+    }
+
+    .ou {
+      color: yellow;
+      font-weight: bold;
+    }
+
+    /* Legenda alergeni */
+    .legend {
+      max-width: 600px;
+      margin: 40px auto 0;
+      background-color: black;
+      border: 2px solid white;
+      border-radius: 10px;
+      padding: 15px 20px;
+      font-size: 1em;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 30px;
+    }
+
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .color-box {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin-right: 10px;
+      border: 1px solid #fff;
+    }
+
+    .red { background-color: red; }
+    .orange { background-color: orange; }
+    .yellow { background-color: yellow; }
+    .purple { background-color: purple; }
+    .green { background-color:greenyellow}
+   
+
+  </style>
+</head>
+<body>
+
+<h1>SAVORY CREPES</h1>
+<div class="clatita-list">
+<div class="clatita-list">
+
+  <div class="clatita-item">
+    <div class="clatita-header">
+      <h2>CREPE WITH TELEMEA CHEESE AND HAM 240G</h2>
+      <span class="price">25 RON</span>                                                                                                                    
+    </div>
+    <p class="ingredient">
+      BATTER 160G (<span class="faina">WHEAT FLOUR</span>, <span class="lactate">MILK</span>, <span class="ou">EGG</span>, SUGAR, SALT), TELEMEA CHEESE 40G, HAM 40G
+    </p>
+    <div class="kcal">Calories: ~513 kcal</div>
+  </div>
+
+  <div class="clatita-item">
+    <div class="clatita-header">
+      <h2>CREPE WITH BURDUF CHEESE AND HAM 240G</h2>
+      <span class="price">25 RON</span>
+    </div>
+    <p class="ingredient">
+      BATTER 160G (<span class="faina">WHEAT FLOUR</span>, <span class="lactate">MILK</span>, <span class="ou">EGG</span>, SUGAR, SALT), BURDUF CHEESE 40G, HAM 40G
+    </p>
+    <div class="kcal">Calories: ~541 kcal</div>
+  </div>
+
+  <div class="clatita-item">
+    <div class="clatita-header">
+      <h2>CREPE WITH CREAM CHEESE AND HAM 240G</h2>
+      <span class="price">25 RON</span>
+    </div>
+    <p class="ingredient">
+      BATTER 160G (<span class="faina">WHEAT FLOUR</span>, <span class="lactate">MILK</span>, <span class="ou">EGG</span>, SUGAR, SALT), CREAM CHEESE 40G, HAM 40G
+    </p>
+    <div class="kcal">Calories: ~530 kcal</div>
+  </div>
+
+  <div class="clatita-item">
+    <div class="clatita-header">
+      <h2>CREPE WITH TELEMEA CHEESE AND CREAM CHEESE 240G</h2>
+      <span class="price">25 RON</span>
+    </div>
+    <p class="ingredient">
+      BATTER 160G (<span class="faina">WHEAT FLOUR</span>, <span class="lactate">MILK</span>, <span class="ou">EGG</span>, SUGAR, SALT), TELEMEA CHEESE 40G, CREAM CHEESE 40G
+    </p>
+    <div class="kcal">Calories: ~553 kcal</div>
+  </div>
+
+  <div class="clatita-item">
+    <div class="clatita-header">
+      <h2>CREPE WITH BURDUF CHEESE AND CREAM CHEESE 240G</h2>
+      <span class="price">25 RON</span>
+    </div>
+    <p class="ingredient">
+      BATTER 160G (<span class="faina">WHEAT FLOUR</span>, <span class="lactate">MILK</span>, <span class="ou">EGG</span>, SUGAR, SALT), BURDUF CHEESE 40G, CREAM CHEESE 40G
+    </p>
+    <div class="kcal">Calories: ~581 kcal</div>
+  </div>
+
+  <div class="clatita-item">
+    <div class="clatita-header">
+      <h2>CREPE WITH TELEMEA CHEESE 200G</h2>
+      <span class="price">20 RON</span>
+    </div>
+    <p class="ingredient">
+      BATTER 160G (<span class="faina">WHEAT FLOUR</span>, <span class="lactate">MILK</span>, <span class="ou">EGG</span>, SUGAR, SALT), TELEMEA CHEESE 40G
+    </p>
+    <div class="kcal">Calories: ~486 kcal</div>
+  </div>
+
+  <div class="clatita-item">
+    <div class="clatita-header">
+      <h2>CREPE WITH BURDUF CHEESE 200G</h2>
+      <span class="price">20 RON</span>
+    </div>
+    <p class="ingredient">
+      BATTER 160G (<span class="faina">WHEAT FLOUR</span>, <span class="lactate">MILK</span>, <span class="ou">EGG</span>, SUGAR, SALT), BURDUF CHEESE 40G
+    </p>
+    <div class="kcal">Calories: ~514 kcal</div>
+  </div>
+
+  <div class="clatita-item">
+    <div class="clatita-header">
+      <h2>CREPE WITH CREAM CHEESE 200G</h2>
+      <span class="price">20 RON</span>
+    </div>
+    <p class="ingredient">
+      BATTER 160G (<span class="faina">WHEAT FLOUR</span>, <span class="lactate">MILK</span>, <span class="ou">EGG</span>, SUGAR, SALT), CREAM CHEESE 40G
+    </p>
+    <div class="kcal">Calories: ~503 kcal</div>
+  </div>
+
+</div>
+
+  <div class="legend">
+    <div class="legend-item"><span class="color-box red"></span> contains wheat flour</div>
+    <div class="legend-item"><span class="color-box orange"></span> contains dairy products</div>
+    <div class="legend-item"><span class="color-box yellow"></span> contains egg</div>
+    <div class="legend-item"><span class="color-box purple"></span> contains soy</div>
+     <div class="legend-item"><span class="color-box green"></span> contains nuts</div>
+  </div>
+
+
+</body>
+</html>
+

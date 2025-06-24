@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Suplimente</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #02340a;
+    color: white;
+    margin: 40px 20px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 40px;
+  }
+  .supplement-list {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 3px solid gold;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .supplement-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #555;
+  }
+  .supplement-item:last-child {
+    border-bottom: none;
+  }
+  .supplement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .supplement-header h2 {
+    font-size: 1.3em;
+    margin: 0;
+    flex: 1;
+    word-break: break-word;
+  }
+  .price {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  .calories {
+    color: #ccc;
+    font-style: italic;
+    margin-top: 4px;
+  }
+  .allergens {
+    margin-top: 5px;
+  }
+  .lactate {
+    color: orange;
+    font-weight: bold;
+  }
+  .plante {
+    color: greenyellow;
+    font-weight: bold;
+  }
+  .carne {
+    color: red;
+    font-weight: bold;
+  }
+  .legend {
+    max-width: 600px;
+    margin: 40px auto 0;
+    background-color: black;
+    border: 2px solid GOLD;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 1em;
+    line-height: 2;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .color-box {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid gold;
+  }
+  .orange { background-color: orange; }
+  .green { background-color: greenyellow; }
+  .red { background-color: red; }
+</style>
+</head>
+<body>
+
+    <h1>TOPPINGS</h1>
+
+<div class="supplement-list">
+<div class="supplement-list">
+
+  <div class="supplement-item">
+    <div class="supplement-header">
+      <h2>BANANA 40G</h2>
+      <span class="price">4 RON</span>
+    </div>
+    <p class="calories">Calories: 36 kcal</p>
+    <p class="allergens"><span class="plante">No specific allergens (fruit)</span></p>
+  </div>
+
+  <div class="supplement-item">
+    <div class="supplement-header">
+      <h2>BISCUITS 40G</h2>
+      <span class="price">4 RON</span>
+    </div>
+    <p class="calories">Calories: 190 kcal</p>
+    <p class="allergens"><span class="lactate">Milk</span>, gluten (wheat flour), egg</p>
+  </div>
+
+  <div class="supplement-item">
+    <div class="supplement-header">
+      <h2>ALMONDS 40G</h2>
+      <span class="price">4 RON</span>
+    </div>
+    <p class="calories">Calories: 230 kcal</p>
+    <p class="allergens"><span class="plante">Nuts (almonds)</span></p>
+  </div>
+
+  <div class="supplement-item">
+    <div class="supplement-header">
+      <h2>CRANBERRIES 40G</h2>
+      <span class="price">4 RON</span>
+    </div>
+    <p class="calories">Calories: 46 kcal</p>
+    <p class="allergens"><span class="plante">No specific allergens (dried fruit)</span></p>
+  </div>
+
+  <div class="supplement-item">
+    <div class="supplement-header">
+      <h2>CHOCOLATE CHIPS 30G</h2>
+      <span class="price">4 RON</span>
+    </div>
+    <p class="calories">Calories: 150 kcal</p>
+    <p class="allergens"><span class="lactate">Milk</span>, <span class="plante">Soy</span></p>
+  </div>
+
+  <div class="supplement-item">
+    <div class="supplement-header">
+      <h2>COCONUT FLAKES 20G</h2>
+      <span class="price">4 RON</span>
+    </div>
+    <p class="calories">Calories: 70 kcal</p>
+    <p class="allergens"><span class="plante">Coconut fruit (plant)</span></p>
+  </div>
+
+  <div class="supplement-item">
+    <div class="supplement-header">
+      <h2>WALNUTS 40G</h2>
+      <span class="price">4 RON</span>
+    </div>
+    <p class="calories">Calories: 260 kcal</p>
+    <p class="allergens"><span class="plante">Nuts (walnuts)</span></p>
+  </div>
+
+  <div class="supplement-item">
+    <div class="supplement-header">
+      <h2>CARAMEL 60G</h2>
+      <span class="price">4 RON</span>
+    </div>
+    <p class="calories">Calories: 200 kcal</p>
+    <p class="allergens">May contain traces of <span class="lactate">milk</span></p>
+  </div>
+
+  <div class="supplement-item">
+    <div class="supplement-header">
+      <h2>VANILLA 60G</h2>
+      <span class="price">4 RON</span>
+    </div>
+    <p class="calories">Calories: 150 kcal</p>
+    <p class="allergens">May contain traces of <span class="lactate">milk</span></p>
+  </div>
+
+  <div class="supplement-item">
+    <div class="supplement-header">
+      <h2>NUTELLA 60G</h2>
+      <span class="price">4 RON</span>
+    </div>
+    <p class="calories">Calories: 330 kcal</p>
+    <p class="allergens"><span class="lactate">Milk</span>, <span class="plante">Nuts (hazelnuts)</span>, <span class="plante">Soy</span></p>
+  </div>
+
+  <div class="supplement-item">
+    <div class="supplement-header">
+      <h2>WHITE CHOCOLATE 60G</h2>
+      <span class="price">4 RON</span>
+    </div>
+    <p class="calories">Calories: 320 kcal</p>
+    <p class="allergens"><span class="lactate">Milk</span>, <span class="plante">Soy</span></p>
+  </div>
+
+  <div class="supplement-item">
+    <div class="supplement-header">
+      <h2>JAM 60G</h2>
+      <span class="price">4 RON</span>
+    </div>
+    <p class="calories">Calories: 150 kcal</p>
+    <p class="allergens">No specific allergens</p>
+  </div>
+
+  <div class="supplement-item">
+    <div class="supplement-header">
+      <h2>TELEMEA CHEESE 40G</h2>
+      <span class="price">5 RON</span>
+    </div>
+    <p class="calories">Calories: 110 kcal</p>
+    <p class="allergens"><span class="lactate">Milk</span></p>
+  </div>
+
+  <div class="supplement-item">
+    <div class="supplement-header">
+      <h2>YELLOW CHEESE 40G</h2>
+      <span class="price">5 RON</span>
+    </div>
+    <p class="calories">Calories: 120 kcal</p>
+    <p class="allergens"><span class="lactate">Milk</span></p>
+  </div>
+
+  <div class="supplement-item">
+    <div class="supplement-header">
+      <h2>SHEEP CHEESE 40G</h2>
+      <span class="price">5 RON</span>
+    </div>
+    <p class="calories">Calories: 130 kcal</p>
+    <p class="allergens"><span class="lactate">Milk</span></p>
+  </div>
+
+  <div class="supplement-item">
+    <div class="supplement-header">
+      <h2>HAM 40G</h2>
+      <span class="price">5 RON</span>
+    </div>
+    <p class="calories">Calories: 90 kcal</p>
+    <p class="allergens"><span class="carne">Pork meat</span></p>
+  </div>
+
+  <div class="supplement-item">
+    <div class="supplement-header">
+      <h2>GARLIC SAUCE 10G</h2>
+      <span class="price">1 RON</span>
+    </div>
+    <p class="calories">Calories: 15 kcal</p>
+    <p class="allergens">No specific allergens</p>
+  </div>
+
+</div>
+
+<div class="legend">
+  <div class="legend-item"><span class="color-box orange"></span> dairy products (milk, cheese, cream)</div>
+  <div class="legend-item"><span class="color-box green"></span> nuts, plants, soy</div>
+  <div class="legend-item"><span class="color-box red"></span> meat</div>
+</div>
+
+</body>
+</html>

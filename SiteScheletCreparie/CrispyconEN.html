@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crispy Conuri</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #02340a;
+      color: #fff;
+      margin: 0;
+      padding: 40px 20px;
+      border: 5px solid white;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 40px;
+      color: #fff;
+    }
+
+    .clatita-list {
+      max-width: 1000px;
+      background-color: #02340a;
+      margin: 0 auto;
+      border: 3px solid GOLD;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .clatita-item {
+      padding: 15px 0;
+      border-bottom: 1px solid #555;
+    }
+
+    .clatita-item:last-child {
+      border-bottom: none;
+    }
+
+    .clatita-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .clatita-header h2 {
+      font-size: 1.2em;
+      color: #fff;
+      margin: 0;
+      flex: 1;
+      padding-right: 10px;
+      word-break: break-word;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #fff;
+      white-space: nowrap;
+    }
+
+    .ingredient {
+      color: #ccc;
+      font-size: 1em;
+      margin: 5px 0;
+    }
+
+    .calorii {
+      font-size: 0.9em;
+      color: #aaa;
+      margin-top: 5px;
+    }
+
+    .faina {
+      color: red;
+      font-weight: bold;
+    }
+
+    .lactate {
+      color: orange;
+      font-weight: bold;
+    }
+
+    .legend {
+      max-width: 600px;
+      margin: 40px auto 0;
+      background-color: black;
+      border: 2px solid gold;
+      border-radius: 10px;
+      padding: 15px 20px;
+      font-size: 1em;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 30px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .color-box {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin-right: 10px;
+      border: 1px solid WHITE;
+    }
+
+    .orange { background-color: orange; }
+    .red { background-color: red; }
+    .yellow { background-color: yellow; }
+    .green { background-color: greenyellow; }
+    .purple { background-color: purple; }
+  </style>
+</head>
+<body>
+
+  <h1>CRISPY CON</h1>
+ <div class="clatita-list">   
+  <div class="clatita-list">
+
+    <div class="clatita-item">
+      <div class="clatita-header">
+        <h2>CRISPY CONE WITH VANILLA, CINNAMON BISCUITS AND ICE CREAM 200G</h2>
+        <span class="price">25 RON</span>
+      </div>
+      <p class="ingredient">DOUGH AND GLAZE 65G (<span class="faina">WHEAT FLOUR</span>, YEAST, SUGAR, SALT, VEGETABLE FATS), VANILLA 20G, CINNAMON BISCUITS 15G, ICE CREAM 100G</p>
+      <p class="calorii">Calories: ~510 kcal</p>
+    </div>
+
+    <div class="clatita-item">
+      <div class="clatita-header">
+        <h2>CRISPY CONE WITH VANILLA, BISCUITS AND ICE CREAM 200G</h2>
+        <span class="price">25 RON</span>
+      </div>
+      <p class="ingredient">DOUGH AND GLAZE 65G (<span class="faina">WHEAT FLOUR</span>, YEAST, SUGAR, SALT, VEGETABLE FATS), VANILLA 20G, BISCUITS 15G, ICE CREAM 100G</p>
+      <p class="calorii">Calories: ~500 kcal</p>
+    </div>
+
+    <div class="clatita-item">
+      <div class="clatita-header">
+        <h2>CRISPY CONE WITH CARAMEL, BANANA AND ICE CREAM 200G</h2>
+        <span class="price">25 RON</span>
+      </div>
+      <p class="ingredient">DOUGH AND GLAZE 65G (<span class="faina">WHEAT FLOUR</span>, YEAST, SUGAR, SALT, VEGETABLE FATS), CARAMEL 20G, BANANA 15G, ICE CREAM 100G</p>
+      <p class="calorii">Calories: ~520 kcal</p>
+    </div>
+
+    <div class="clatita-item">
+      <div class="clatita-header">
+        <h2>CRISPY CONE WITH NUTELLA, BISCUITS AND ICE CREAM 200G</h2>
+        <span class="price">25 RON</span>
+      </div>
+      <p class="ingredient">DOUGH AND GLAZE 65G (<span class="faina">WHEAT FLOUR</span>, YEAST, SUGAR, SALT, VEGETABLE FATS), NUTELLA 20G, BISCUITS 15G, ICE CREAM 100G</p>
+      <p class="calorii">Calories: ~530 kcal</p>
+    </div>
+
+    <div class="clatita-item">
+      <div class="clatita-header">
+        <h2>CRISPY CONE WITH WHITE CHOCOLATE, BANANA AND ICE CREAM 200G</h2>
+        <span class="price">25 RON</span>
+      </div>
+      <p class="ingredient">DOUGH AND GLAZE 65G (<span class="faina">WHEAT FLOUR</span>, YEAST, SUGAR, SALT, VEGETABLE FATS), WHITE CHOCOLATE 20G, BANANA 15G, ICE CREAM 100G</p>
+      <p class="calorii">Calories: ~520 kcal</p>
+    </div>
+
+    <div class="clatita-item">
+      <div class="clatita-header">
+        <h2>CRISPY CONE WITH WHITE CHOCOLATE, BANANA AND ICE CREAM 200G</h2>
+        <span class="price">25 RON</span>
+      </div>
+      <p class="ingredient">DOUGH AND GLAZE 65G (<span class="faina">WHEAT FLOUR</span>, YEAST, SUGAR, SALT, VEGETABLE FATS), NUTELLA 20G, BANANA 15G, ICE CREAM 100G</p>
+      <p class="calorii">Calories: ~510 kcal</p>
+    </div>
+
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><span class="color-box red"></span> contains wheat flour</div>
+    <div class="legend-item"><span class="color-box orange"></span> contains dairy products</div>
+    <div class="legend-item"><span class="color-box yellow"></span> contains egg</div>
+    <div class="legend-item"><span class="color-box purple"></span> contains soy</div>
+    <div class="legend-item"><span class="color-box green"></span> contains nuts</div>
+  </div>
+
+

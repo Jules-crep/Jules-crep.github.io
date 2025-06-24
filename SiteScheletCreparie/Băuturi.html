@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Băuturi Calde și Răcoritoare</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #02340a;
+      color: #fff;
+      margin: 0;
+      padding: 40px 20px;
+      border: 5px solid white;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 40px;
+      color: #fff;
+    }
+
+    .drink-list {
+      max-width: 1000px;
+      margin: 0 auto;
+      border: 3px solid gold;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .drink-item {
+      padding: 15px 0;
+      border-bottom: 1px solid #555;
+    }
+
+    .drink-item:last-child {
+      border-bottom: none;
+    }
+
+    .drink-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .drink-header h2 {
+      font-size: 1.2em;
+      color: #fff;
+      margin: 0;
+      flex: 1;
+      padding-right: 10px;
+      word-break: break-word;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #fff;
+      white-space: nowrap;
+    }
+
+    .ingredient {
+      color: #ccc;
+      font-size: 1em;
+      margin: 5px 0;
+    }
+
+    .lactate {
+      color: orange;
+      font-weight: bold;
+    }
+
+    .plante {
+      color: greenyellow;
+      font-weight: bold;
+    }
+
+    .legend {
+      max-width: 600px;
+      margin: 40px auto 0;
+      background-color: black;
+      border: 2px solid gold;
+      border-radius: 10px;
+      padding: 15px 20px;
+      font-size: 1em;
+      line-height: 2;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .color-box {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin-right: 10px;
+      border: 1px solid #fff;
+    }
+
+    .orange { background-color: orange; }
+    .green { background-color: greenyellow; }
+  </style>
+</head>
+<body>
+
+  <h1>BĂUTURI</h1>
+
+  <div class="drink-list">
+  <div class="drink-list">
+  <div class="drink-item">
+    <div class="drink-header">
+      <h2>KARAMELITA 320ML</h2>
+      <span class="price">14 RON</span>
+    </div>
+    <p class="ingredient">CAFEA 8G, APA 50ML, <span class="lactate">LAPTE</span> 240ML, CARAMEL 30ML</p>
+    <p class="calorii">Calorii: 172 kcal</p>
+  </div>
+
+  <div class="drink-item">
+    <div class="drink-header">
+      <h2>CAFFE LATTE 320ML</h2>
+      <span class="price">12 RON</span>
+    </div>
+    <p class="ingredient">CAFEA 8G, APA 50ML, <span class="lactate">LAPTE</span> 270ML</p>
+    <p class="calorii">Calorii: 117 kcal</p>
+  </div>
+
+  <div class="drink-item">
+    <div class="drink-header">
+      <h2>FLAT WHITE 240ML</h2>
+      <span class="price">17 RON</span>
+    </div>
+    <p class="ingredient">CAFEA 16G, APA 50ML, <span class="lactate">LAPTE</span> 190ML</p>
+    <p class="calorii">Calorii: 105 kcal</p>
+  </div>
+
+  <div class="drink-item">
+    <div class="drink-header">
+      <h2>CAPPUCCINO 240ML</h2>
+      <span class="price">10 RON</span>
+    </div>
+    <p class="ingredient">CAFEA 8G, APA 50ML, <span class="lactate">LAPTE</span> 190ML</p>
+    <p class="calorii">Calorii: 82 kcal</p>
+  </div>
+
+  <div class="drink-item">
+    <div class="drink-header">
+      <h2>AMERICANO 100ML</h2>
+      <span class="price">8 RON</span>
+    </div>
+    <p class="ingredient">CAFEA 8G, APA 100ML</p>
+    <p class="calorii">Calorii: 3 kcal</p>
+  </div>
+
+  <div class="drink-item">
+    <div class="drink-header">
+      <h2>DOUBLE ESPRESSO 100ML</h2>
+      <span class="price">14 RON</span>
+    </div>
+    <p class="ingredient">CAFEA 16G, APA 100ML</p>
+    <p class="calorii">Calorii: 6 kcal</p>
+  </div>
+
+  <div class="drink-item">
+    <div class="drink-header">
+      <h2>ESPRESSO 50ML</h2>
+      <span class="price">7 RON</span>
+    </div>
+    <p class="ingredient">CAFEA 8G, APA 50ML</p>
+    <p class="calorii">Calorii: 3 kcal</p>
+  </div>
+
+  <div class="drink-item">
+    <div class="drink-header">
+      <h2>ESPRESSO CU LAPTE 150ML</h2>
+      <span class="price">8 RON</span>
+    </div>
+    <p class="ingredient">CAFEA 8G, APA 100ML, <span class="lactate">LAPTE</span> 50ML</p>
+    <p class="calorii">Calorii: 43 kcal</p>
+  </div>
+
+  <div class="drink-item">
+    <div class="drink-header">
+      <h2>LAPTE VEGETAL</h2>
+      <span class="price">3 RON</span>
+    </div>
+    <p class="ingredient"><span class="plante">Lapte vegetal (nuci/plante)</span></p>
+    <p class="calorii">Calorii: 30 kcal (aprox.)</p>
+  </div>
+
+  <div class="drink-item">
+    <div class="drink-header">
+      <h2>JAGERTEE 220ML</h2>
+      <span class="price">14 RON</span>
+    </div>
+    <p class="ingredient"><span class="plante">PLANTE</span>, APA 200ML, STROH 20ML</p>
+    <p class="calorii">Calorii: 66 kcal (aprox.)</p>
+  </div>
+
+  <div class="drink-item">
+    <div class="drink-header">
+      <h2>INFUZIE DE CEAI 200ML</h2>
+      <span class="price">10 RON</span>
+    </div>
+    <p class="ingredient"><span class="plante">PLANTE</span>, APA 200ML</p>
+    <p class="calorii">Calorii: 2 kcal</p>
+  </div>
+
+  <div class="drink-item">
+    <div class="drink-header">
+      <h2>CIOCOLATĂ CALDĂ 320ML</h2>
+      <span class="price">18 RON</span>
+    </div>
+    <p class="ingredient">PUDRĂ DE CIOCOLATĂ 40G, APA 250ML, <span class="lactate">FRISCĂ</span> 50G <br/>
+    (+)(NUTELLA/ CARAMEL/ BISCUITI / FULGI DE CIOCOLATA)
+    </p>
+    <p class="calorii">Calorii: 320 kcal (fără toppinguri)</p>
+  </div>
+
+  <div class="drink-item">
+    <div class="drink-header">
+      <h2>CIOCOLATĂ CALDĂ 230ML</h2>
+      <span class="price">12 RON</span>
+    </div>
+    <p class="ingredient">PUDRĂ DE CIOCOLATĂ 30G, APA 210ML</p>
+    <p class="calorii">Calorii: 172 kcal</p>
+  </div>
+
+  <div class="drink-item">
+    <div class="drink-header">
+      <h2>APĂ PLATĂ / CARBOGAZOASĂ 500ML</h2>
+      <span class="price">7 RON</span>
+    </div>
+    <p class="ingredient">—</p>
+    <p class="calorii">Calorii: 0 kcal</p>
+  </div>
+    <div class="legend">
+    <div class="legend-item"><span class="color-box orange"></span> conține produse lactate (lapte, frișcă, smântână)</div>
+    <div class="legend-item"><span class="color-box green"></span> poate conține plante sau nuci</div>
+  </div>
+
+</div>
