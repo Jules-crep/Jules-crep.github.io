@@ -13,6 +13,7 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+      padding: 20px; /* pentru puțin spațiu pe mobil */
     }
 
     .site-container {
@@ -22,6 +23,7 @@
       text-align: center;
       width: 90%;
       max-width: 600px;
+      box-sizing: border-box;
     }
 
     h1 {
@@ -58,9 +60,15 @@
 
     /* ✅ Mobile adjustments */
     @media screen and (max-width: 480px) {
+      body {
+        padding: 10px; /* mai puțin padding pe mobil */
+      }
+
       .site-container {
         padding: 30px 15px;
         border-width: 3px;
+        width: 100%;
+        max-width: none;
       }
 
       h1 {
@@ -69,9 +77,10 @@
       }
 
       .menu-item {
-        font-size: 1.2em;
+        font-size: 1.1em;
         padding: 12px 16px;
-        width: 90%;
+        width: 100%; /* ocupă tot spațiul containerului */
+        max-width: none;
       }
     }
   </style>
