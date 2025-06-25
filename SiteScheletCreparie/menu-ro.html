@@ -1,35 +1,32 @@
-<!DOCTYPE html>
 <html lang="ro">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meniu în Română</title>
+  <title>Enghlish Menu</title>
   <style>
     body {
       margin: 0;
       font-family: 'Times New Roman', Times, serif;
-      background-color: #02340a;
+      background-color: #02340a; /* Fundal negru */
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      padding: 20px; /* pentru puțin spațiu pe mobil */
     }
 
     .site-container {
-      background-color: black;
-      border: 5px solid white;
+      background-color: black ;
+      border: 5px solid rgb(255, 255, 255); /* Chenar alb */
       padding: 40px 20px;
       text-align: center;
       width: 90%;
       max-width: 600px;
-      box-sizing: border-box;
     }
 
     h1 {
       color: #FFA138;
       font-size: 3em;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     .menu-list {
@@ -55,20 +52,13 @@
 
     .menu-item:hover {
       transform: scale(1.05);
-      background-color: #b8860b;
+      border-color: #999;
     }
 
-    /* ✅ Mobile adjustments */
     @media screen and (max-width: 480px) {
-      body {
-        padding: 10px; /* mai puțin padding pe mobil */
-      }
-
       .site-container {
         padding: 30px 15px;
         border-width: 3px;
-        width: 100%;
-        max-width: none;
       }
 
       h1 {
@@ -77,10 +67,9 @@
       }
 
       .menu-item {
-        font-size: 1.1em;
+        font-size: 1.2em;
         padding: 12px 16px;
-        width: 80%; /* ocupă tot spațiul containerului */
-        max-width: none;
+        width: 90%;
       }
     }
   </style>
