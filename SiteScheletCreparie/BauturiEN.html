@@ -21,13 +21,27 @@
       color: #fff;
     }
 
+
+@keyframes borderGlow {
+  0% {
+    border-color: gold;
+    box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.6);
+  }
+  50% {
+    border-color: orange;
+    box-shadow: 0 0 20px 4px rgba(255, 165, 0, 0.8);
+  }
+  100% {
+    border-color: gold;
+    box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.6);
+  }
+}
     .drink-list {
-      max-width: 1000px;
-      margin: 0 auto;
       border: 3px solid gold;
-      border-radius: 10px;
+      border-radius: 5px;
       padding: 20px;
-    }
+      animation: borderGlow 3s infinite alternate;
+   }
 
     .drink-item {
       padding: 15px 0;
@@ -130,7 +144,6 @@
 
     <h1>DRINKS</h1>
 
-<div class="drink-list">
 <div class="drink-list">
 
   <div class="drink-item">

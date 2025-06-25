@@ -16,13 +16,27 @@
     font-size: 3em;
     margin-bottom: 40px;
   }
-  .supplement-list {
-    max-width: 800px;
-    margin: 0 auto;
-    border: 3px solid gold;
-    border-radius: 10px;
-    padding: 20px;
+
+@keyframes borderGlow {
+  0% {
+    border-color: gold;
+    box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.6);
   }
+  50% {
+    border-color: orange;
+    box-shadow: 0 0 20px 4px rgba(255, 165, 0, 0.8);
+  }
+  100% {
+    border-color: gold;
+    box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.6);
+  }
+}
+    .supplement-list {
+      border: 3px solid gold;
+      border-radius: 5px;
+      padding: 20px;
+      animation: borderGlow 3s infinite alternate;
+   }
   .supplement-item {
     padding: 15px 0;
     border-bottom: 1px solid #555;
@@ -118,7 +132,7 @@
     <h1>TOPPINGS</h1>
 
 <div class="supplement-list">
-<div class="supplement-list">
+
 
   <div class="supplement-item">
     <div class="supplement-header">
