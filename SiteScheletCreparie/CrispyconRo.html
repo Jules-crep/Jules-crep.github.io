@@ -12,6 +12,7 @@
       margin: 0;
       padding: 40px 20px;
       border: 5px solid white;
+      box-sizing: border-box;
     }
 
     h1 {
@@ -25,9 +26,10 @@
       max-width: 1000px;
       background-color: #02340a;
       margin: 0 auto;
-      border: 3px solid GOLD;
+      border: 3px solid gold;
       border-radius: 10px;
       padding: 20px;
+      box-sizing: border-box;
     }
 
     .clatita-item {
@@ -61,6 +63,7 @@
       font-size: 1.2em;
       color: #fff;
       white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .ingredient {
@@ -96,6 +99,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 10px 30px;
+      box-sizing: border-box;
     }
 
     .legend-item {
@@ -108,7 +112,7 @@
       height: 20px;
       display: inline-block;
       margin-right: 10px;
-      border: 1px solid WHITE;
+      border: 1px solid white;
     }
 
     .orange { background-color: orange; }
@@ -117,10 +121,59 @@
     .green { background-color: greenyellow; }
     .purple { background-color: purple; }
 
-     @media screen and (max-width: 480px) {
-      .site-container {
+    /* ==================== Mobile adjustments ==================== */
+    @media screen and (max-width: 768px) {
+      body {
         padding: 30px 15px;
         border-width: 3px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+      }
+
+      .clatita-list {
+        max-width: 100%;
+        padding: 15px;
+        border-width: 2px;
+      }
+
+      .clatita-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+      }
+
+      .clatita-header h2 {
+        font-size: 1.1em;
+        padding-right: 0;
+      }
+
+      .price {
+        font-size: 1.1em;
+        white-space: normal;
+      }
+
+      .ingredient {
+        font-size: 0.95em;
+      }
+
+      .calorii {
+        font-size: 0.85em;
+      }
+
+      .legend {
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        gap: 10px 20px;
+        padding: 10px 15px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      body {
+        padding: 20px 10px;
       }
 
       h1 {
@@ -128,81 +181,100 @@
         margin-bottom: 20px;
       }
 
-      .menu-item {
-        font-size: 1.2em;
-        padding: 12px 16px;
-        width: 90%;
+      .clatita-list {
+        padding: 10px;
+      }
+
+      .clatita-header h2 {
+        font-size: 1em;
+      }
+
+      .price {
+        font-size: 1em;
+      }
+
+      .ingredient {
+        font-size: 0.9em;
+      }
+
+      .calorii {
+        font-size: 0.8em;
+      }
+
+      .legend {
+        padding: 8px 10px;
+        font-size: 0.9em;
+      }
+
+      .color-box {
+        width: 18px;
+        height: 18px;
       }
     }
-
   </style>
 </head>
 <body>
 
   <h1>CRISPY CON</h1>
   <div class="clatita-list">   
-  <div class="clatita-list">
 
-   
-
-  <div class="clatita-item">
-    <div class="clatita-header">
-      <h2>CRISPY CON CU VANILIE, BISCUITI CU SCORTISOARA SI INGHETATA 200G</h2>
-      <span class="price">25 RON</span>
+    <div class="clatita-item">
+      <div class="clatita-header">
+        <h2>CRISPY CON CU VANILIE, BISCUITI CU SCORTISOARA SI INGHETATA 200G</h2>
+        <span class="price">25 RON</span>
+      </div>
+      <p class="ingredient">ALUAT ȘI GLAZURĂ 65G (<span class="faina">FĂINĂ DE GRÂU</span>, DROJDIE, ZAHĂR, SARE, GRĂSIMI VEGETALE), VANILIE 20G, BISCUIȚI CU SCORȚIȘOARĂ 15G, INGHETATĂ 100G</p>
+      <p class="calorii">Calorii: ~510 kcal</p>
     </div>
-    <p class="ingredient">ALUAT ȘI GLAZURĂ 65G (<span class="faina">FĂINĂ DE GRÂU</span>, DROJDIE, ZAHĂR, SARE, GRĂSIMI VEGETALE), VANILIE 20G, BISCUIȚI CU SCORȚIȘOARĂ 15G, INGHETATĂ 100G</p>
-    <p class="calorii">Calorii: ~510 kcal</p>
+
+    <div class="clatita-item">
+      <div class="clatita-header">
+        <h2>CRISPY CON CU VANILIE, BISCUIȚI ȘI INGHETATA 200G</h2>
+        <span class="price">25 RON</span>
+      </div>
+      <p class="ingredient">ALUAT ȘI GLAZURĂ 65G (<span class="faina">FĂINĂ DE GRÂU</span>, DROJDIE, ZAHĂR, SARE, GRĂSIMI VEGETALE), VANILIE 20G, BISCUIȚI 15G, INGHETATĂ 100G</p>
+      <p class="calorii">Calorii: ~500 kcal</p>
+    </div>
+
+    <div class="clatita-item">
+      <div class="clatita-header">
+        <h2>CRISPY CON CU CARAMEL, BANANA ȘI INGHETATA 200G</h2>
+        <span class="price">25 RON</span>
+      </div>
+      <p class="ingredient">ALUAT ȘI GLAZURĂ 65G (<span class="faina">FĂINĂ DE GRÂU</span>, DROJDIE, ZAHĂR, SARE, GRĂSIMI VEGETALE), CARAMEL 20G, BANANA 15G, INGHETATĂ 100G</p>
+      <p class="calorii">Calorii: ~520 kcal</p>
+    </div>
+
+    <div class="clatita-item">
+      <div class="clatita-header">
+        <h2>CRISPY CON CU NUTELLA, BISCUIȚI ȘI INGHETATA 200G</h2>
+        <span class="price">25 RON</span>
+      </div>
+      <p class="ingredient">ALUAT ȘI GLAZURĂ 65G (<span class="faina">FĂINĂ DE GRÂU</span>, DROJDIE, ZAHĂR, SARE, GRĂSIMI VEGETALE), NUTELLA 20G, BISCUIȚI 15G, INGHETATĂ 100G</p>
+      <p class="calorii">Calorii: ~530 kcal</p>
+    </div>
+
+    <div class="clatita-item">
+      <div class="clatita-header">
+        <h2>CRISPY CON CU CIOCOLATĂ ALBĂ, BANANA ȘI INGHETATA 200G</h2>
+        <span class="price">25 RON</span>
+      </div>
+      <p class="ingredient">ALUAT ȘI GLAZURĂ 65G (<span class="faina">FĂINĂ DE GRÂU</span>, DROJDIE, ZAHĂR, SARE, GRĂSIMI VEGETALE), CIOCOLATĂ ALBĂ 20G, BANANA 15G, INGHETATĂ 100G</p>
+      <p class="calorii">Calorii: ~520 kcal</p>
+    </div>
+
+    <div class="clatita-item">
+      <div class="clatita-header">
+        <h2>CRISPY CON CU CIOCOLATĂ ALBĂ, BANANA ȘI INGHETATA 200G</h2>
+        <span class="price">25 RON</span>
+      </div>
+      <p class="ingredient">ALUAT ȘI GLAZURĂ 65G (<span class="faina">FĂINĂ DE GRÂU</span>, DROJDIE, ZAHĂR, SARE, GRĂSIMI VEGETALE), NUTELLA 20G, BANANA 15G, INGHETATA 100G</p>
+      <p class="calorii">Calorii: ~510 kcal</p>
+    </div>
+
   </div>
 
-  <div class="clatita-item">
-    <div class="clatita-header">
-      <h2>CRISPY CON CU VANILIE, BISCUIȚI ȘI INGHETATA 200G</h2>
-      <span class="price">25 RON</span>
-    </div>
-    <p class="ingredient">ALUAT ȘI GLAZURĂ 65G (<span class="faina">FĂINĂ DE GRÂU</span>, DROJDIE, ZAHĂR, SARE, GRĂSIMI VEGETALE), VANILIE 20G, BISCUIȚI 15G, INGHETATĂ 100G</p>
-    <p class="calorii">Calorii: ~500 kcal</p>
-  </div>
-
-  <div class="clatita-item">
-    <div class="clatita-header">
-      <h2>CRISPY CON CU CARAMEL, BANANA ȘI INGHETATA 200G</h2>
-      <span class="price">25 RON</span>
-    </div>
-    <p class="ingredient">ALUAT ȘI GLAZURĂ 65G (<span class="faina">FĂINĂ DE GRÂU</span>, DROJDIE, ZAHĂR, SARE, GRĂSIMI VEGETALE), CARAMEL 20G, BANANA 15G, INGHETATĂ 100G</p>
-    <p class="calorii">Calorii: ~520 kcal</p>
-  </div>
-
-  <div class="clatita-item">
-    <div class="clatita-header">
-      <h2>CRISPY CON CU NUTELLA, BISCUIȚI ȘI INGHETATA 200G</h2>
-      <span class="price">25 RON</span>
-    </div>
-    <p class="ingredient">ALUAT ȘI GLAZURĂ 65G (<span class="faina">FĂINĂ DE GRÂU</span>, DROJDIE, ZAHĂR, SARE, GRĂSIMI VEGETALE), NUTELLA 20G, BISCUIȚI 15G, INGHETATĂ 100G</p>
-    <p class="calorii">Calorii: ~530 kcal</p>
-  </div>
-
-  <div class="clatita-item">
-    <div class="clatita-header">
-      <h2>CRISPY CON CU CIOCOLATĂ ALBĂ, BANANA ȘI INGHETATA 200G</h2>
-      <span class="price">25 RON</span>
-    </div>
-    <p class="ingredient">ALUAT ȘI GLAZURĂ 65G (<span class="faina">FĂINĂ DE GRÂU</span>, DROJDIE, ZAHĂR, SARE, GRĂSIMI VEGETALE), CIOCOLATĂ ALBĂ 20G, BANANA 15G, INGHETATĂ 100G</p>
-    <p class="calorii">Calorii: ~520 kcal</p>
-  </div>
-
-  <div class="clatita-item">
-    <div class="clatita-header">
-      <h2>CRISPY CON CU CIOCOLATĂ ALBĂ, BANANA ȘI INGHETATA 200G</h2>
-      <span class="price">25 RON</span>
-    </div>
-    <p class="ingredient">ALUAT ȘI GLAZURĂ 65G (<span class="faina">FĂINĂ DE GRÂU</span>, DROJDIE, ZAHĂR, SARE, GRĂSIMI VEGETALE), NUTELLA 20G, BANANA 15G, INGHETATA 100G</p>
-    <p class="calorii">Calorii: ~510 kcal</p>
-  </div>
-
-</div>
-
-
-<div class="legend">
+  <div class="legend">
     <div class="legend-item"><span class="color-box red"></span>  conține  făină de grâu</div>
     <div class="legend-item"><span class="color-box orange"></span> conține  produse lactate </div>
     <div class="legend-item"><span class="color-box yellow"></span> conține  ou</div>
@@ -212,4 +284,3 @@
 
 </body>
 </html>
-
