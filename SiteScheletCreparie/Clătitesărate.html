@@ -96,40 +96,56 @@
       font-weight: bold;
     }
 
-    /* Legenda alergeni */
-    .legend {
-      max-width: 600px;
-      margin: 40px auto 0;
-      background-color: black;
-      border: 2px solid white;
-      border-radius: 10px;
-      padding: 15px 20px;
-      font-size: 1em;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px 30px;
-    }
+.legend {
+  max-width: 600px;
+  margin: 40px auto 0;
+  border-left: 3px solid gold;
+  padding: 20px 25px;
+  font-size: 1em;
+  background-color: #011f05;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: 'Georgia', serif;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  padding-left: 10px;
+}
+
+.legend-item::before {
+  content: '⚠️';
+  font-size: 1em;
+  color: gold;
+  position: absolute;
+  left: -2px;
+}
 
 
-    .legend-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-    }
+
+
+
+/* Culorile deja definite rămân, dar le poți ajusta dacă dorești */
+
 
     .color-box {
       width: 20px;
       height: 20px;
       display: inline-block;
       margin-right: 10px;
-      border: 1px solid #fff;
+      border: 1px solid rgb(0, 0, 0);
     }
 
-    .red { background-color: red; }
     .orange { background-color: orange; }
+    .red { background-color: red; }
     .yellow { background-color: yellow; }
+    .green { background-color: greenyellow; }
     .purple { background-color: purple; }
-    .green { background-color:greenyellow}
 
      @media screen and (max-width: 480px) {
       .site-container {
