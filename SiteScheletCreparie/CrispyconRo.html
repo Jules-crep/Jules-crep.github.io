@@ -21,16 +21,17 @@
       margin-bottom: 40px;
       color: #fff;
     }
-
-    .clatita-list {
-      max-width: 1000px;
-      background-color: #02340a;
-      margin: 0 auto;
-      border: 3px solid gold;
-      border-radius: 10px;
-      padding: 20px;
-      box-sizing: border-box;
-    }
+.clatita-list {
+  border: 4px double transparent;
+  border-radius: 12px;
+  padding: 20px;
+  background-image: 
+    linear-gradient(#02340a, #02340a), /* fundal */
+    linear-gradient(45deg, gold, orange, yellow); /* bordură gradient */
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 0 8px 2px rgba(255, 215, 0, 0.4);
+}
 
     .clatita-item {
       padding: 15px 0;
@@ -134,9 +135,8 @@
       }
 
       .clatita-list {
-        max-width: 100%;
-        padding: 15px;
-        border-width: 2px;
+        border-radius: 12px;
+        padding: 20px;
       }
 
       .clatita-header {
