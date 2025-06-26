@@ -1,46 +1,39 @@
 <!DOCTYPE html>
 <html lang="ro">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meniu Sinaia</title>
-
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Times New Roman', Times, serif;
       background: linear-gradient(to bottom, #02340a, #021907);
+      color: white;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
       align-items: center;
       text-align: center;
-      position: relative;
-      color: white;
     }
 
-.logo {
-  margin-top: 60px;
-  width: 90%;
-  max-width: 400px;
-}
-
-.logo img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
+    .logo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
     .menu-buttons {
       display: flex;
       gap: 40px;
-      margin-top: 60px;
+      margin-top: 20px; /* AICI am modificat */
       justify-content: center;
-      flex-wrap: wrap; /* permite wrap pe mobil */
-      max-width: 100%;
+      flex-wrap: wrap;
+      width: 100%;
       padding: 0 10px;
     }
 
@@ -57,7 +50,7 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      min-width: 140px; /* butoane să nu fie prea mici */
+      min-width: 140px;
       justify-content: center;
     }
 
@@ -65,10 +58,8 @@
       height: 30px;
       border-radius: 4px;
       box-shadow: 0 0 3px #000;
-      display: block;
     }
 
-    /* Adaptare pentru mobil */
     @media (max-width: 600px) {
       .menu-buttons a {
         padding: 12px 30px;
@@ -84,26 +75,22 @@
       background-color: #b8860b;
       transform: scale(1.05);
     }
-footer {
-  position: absolute;
-  bottom: 60px;
-  width: 100%;
-  text-align: center;
-  color: #b8860b; /* gold mai subtil, cald */
-  font-size: 1.4em;
-  font-weight: 800;
-}
 
-
-    
+    footer {
+      margin-top: auto;
+      width: 100%;
+      text-align: center;
+      color: #b8860b;
+      font-size: 1.4em;
+      font-weight: 800;
+      padding: 40px 10px;
+    }
   </style>
 </head>
-
 <body>
 
-  <!-- Logo -->
+  <!-- Logo full width -->
   <div class="logo">
-    <!-- Folosește o cale relativă pentru imagine -->
     <img src="C:\Users\Iulia\Documents\GitHub\Jules-crep.github.io\SiteScheletCreparie\media\403f5c50-9aae-451e-b9ce-f959db36f53e.webp" alt="Logo Sinaia" />
   </div>
 
@@ -117,11 +104,10 @@ footer {
     </a>
   </div>
 
-  <!-- Footer cu adresă -->
+  <!-- Footer -->
   <footer>
     STR. OCTAVIAN GOGA, NR 2, SINAIA, PRAHOVA - PARCUL DIMITRIE GHICA
   </footer>
 
 </body>
-
 </html>
