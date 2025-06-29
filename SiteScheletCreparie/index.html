@@ -22,9 +22,9 @@
     }
 
     .logo {
-      margin-top: 40px; /* spațiu deasupra logo-ului */
-      width: 100%;        /* logo mare pe desktop */
-      max-width: 600px;  /* limită maximă */
+      margin-top: 40px;
+      width: 100%;
+      max-width: 600px;
     }
 
     .logo img {
@@ -32,12 +32,15 @@
       height: auto;
       display: block;
       margin: 0 auto;
+      border: 2px solid white; /* rama aurie elegantă */
+      border-radius: 20px;                   /* colțuri rotunjite */
+      box-shadow: 0 0 40px rgba(201,138,10,0.5); /* glow subtil */
     }
 
     .menu-buttons {
       display: flex;
       gap: 40px;
-      margin-top: 20px; /* butoanele imediat sub logo */
+      margin-top: 20px;
       justify-content: center;
       flex-wrap: wrap;
       width: 100%;
@@ -69,7 +72,7 @@
 
     @media (max-width: 768px) {
       .logo {
-        width: 80%; /* logo mai mare pe mobil */
+        width: 80%;
       }
 
       .menu-buttons a {
@@ -100,9 +103,9 @@
 </head>
 <body>
 
-  <!-- Logo plasat direct deasupra butoanelor -->
+  <!-- Logo cu ramă -->
   <div class="logo">
-    <img src="media\logoauriu.webp" width="600" alt="Logo Creperia" />
+    <img src="media/sinaiacrep.jpeg" width="600" alt="Logo Creperia" />
   </div>
 
   <!-- Butoane meniu -->
