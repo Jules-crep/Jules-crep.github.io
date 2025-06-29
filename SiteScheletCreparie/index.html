@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meniu Sinaia</title>
+  <title>Meniu Creperia</title>
   <style>
     * {
       box-sizing: border-box;
@@ -21,16 +21,23 @@
       text-align: center;
     }
 
+    .logo {
+      margin-top: 40px; /* spațiu deasupra logo-ului */
+      width: 50%;        /* logo mare pe desktop */
+      max-width: 600px;  /* limită maximă */
+    }
+
     .logo img {
       width: 100%;
       height: auto;
       display: block;
+      margin: 0 auto;
     }
 
     .menu-buttons {
       display: flex;
       gap: 40px;
-      margin-top: 20px; /* AICI am modificat */
+      margin-top: 20px; /* butoanele imediat sub logo */
       justify-content: center;
       flex-wrap: wrap;
       width: 100%;
@@ -60,10 +67,14 @@
       box-shadow: 0 0 3px #000;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
+      .logo {
+        width: 80%; /* logo mai mare pe mobil */
+      }
+
       .menu-buttons a {
         padding: 12px 30px;
-        font-size: 1.2em;
+        font-size: 1.4em;
       }
 
       .menu-buttons a img {
@@ -89,9 +100,9 @@
 </head>
 <body>
 
-  <!-- Logo full width -->
+  <!-- Logo plasat direct deasupra butoanelor -->
   <div class="logo">
-    <img src="C:\Users\Iulia\Documents\GitHub\Jules-crep.github.io\SiteScheletCreparie\media\403f5c50-9aae-451e-b9ce-f959db36f53e.webp" alt="Logo Sinaia" />
+    <img src="C:\Users\Iulia\Documents\GitHub\Jules-crep.github.io\SiteScheletCreparie\media\403f5c50-9aae-451e-b9ce-f959db36f53e.webp" alt="Logo Creperia" />
   </div>
 
   <!-- Butoane meniu -->
