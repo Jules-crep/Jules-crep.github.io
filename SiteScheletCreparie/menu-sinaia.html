@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Selectare locație</title>
+  <title>Meniu Sinaia</title>
 
   <style>
     body {
@@ -42,17 +42,17 @@
     .menu-buttons a {
       padding: 20px 35px;
       font-size: 1.8em;
-      background-color: #02340a;
+      background-color: #c98a0a;
       color: white;
       text-decoration: none;
       border-radius: 10px;
-      border: 2px solid white;
+      border: 2px solid #8a5d00;
       box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
       transition: all 0.3s ease;
     }
 
     .menu-buttons a:hover {
-      background-color: #0e441e;
+      background-color: #b8860b;
       transform: scale(1.05);
     }
 
@@ -67,6 +67,7 @@
       padding: 0 10px;
     }
 
+    /* Responsive pentru telefoane mici */
     @media screen and (max-width: 480px) {
       .logo img {
         max-width: 90%;
@@ -95,6 +96,7 @@
       }
     }
 
+    /* Responsive pentru tablete */
     @media screen and (max-width: 768px) {
       .menu-buttons {
         gap: 25px;
@@ -115,15 +117,19 @@
 
   <!-- Logo -->
   <div class="logo">
-    <img src="SiteScheletCreparie/media/Logo alb.png" alt="Logo Jules Crep" />
+    <img src="media\Logo alb.png"  alt="Logo Jules Crep" />
   </div>
 
-  <!-- Selectare locație -->
+  <!-- Butoane meniu -->
   <div class="menu-buttons">
-    <a href="SiteScheletCreparie/menu-sinaia.html">MENIU SINAIA</a>
-    <a href="SiteScheletCreparie/menu-sibiu.html">MENIU SIBIU</a>
+    <a href="menu-ro.html">MENIU</a>
+    <a href="menu-en.html">MENU</a>
   </div>
 
+  <!-- Footer cu adresă -->
+  <footer>
+    STR. OCTAVIAN GOGA, NR 2, SINAIA, PRAHOVA - PARCUL DIMITRIE GHICA
+  </footer>
 
 </body>
 
